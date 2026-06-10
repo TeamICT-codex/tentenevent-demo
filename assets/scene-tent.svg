@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1f2b"/>
+      <stop offset="0.5" stop-color="#10312a"/>
+      <stop offset="0.82" stop-color="#1d3324"/>
+      <stop offset="1" stop-color="#241f15"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fbe7c4"/>
+      <stop offset="0.6" stop-color="#f3d59a" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f3d59a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="horizon" cx="0.5" cy="1" r="0.8">
+      <stop offset="0" stop-color="#e0764a" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#d68a3f" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#d68a3f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tentglow" cx="0.5" cy="0.6" r="0.6">
+      <stop offset="0" stop-color="#ffce82" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffce82" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="door" cx="0.5" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#ffe1a3"/>
+      <stop offset="1" stop-color="#e8943f"/>
+    </radialGradient>
+    <radialGradient id="bulb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6ad" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe6ad" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- lucht -->
+  <rect width="800" height="520" fill="url(#sky)"/>
+
+  <!-- maan + sterren -->
+  <circle cx="648" cy="104" r="60" fill="url(#moon)"/>
+  <circle cx="648" cy="104" r="22" fill="#fbeed0"/>
+  <g fill="#d7e6dc">
+    <circle cx="90" cy="70" r="1.6" opacity="0.7"/><circle cx="160" cy="120" r="1.2" opacity="0.5"/>
+    <circle cx="250" cy="60" r="1.8" opacity="0.8"/><circle cx="330" cy="110" r="1.1" opacity="0.45"/>
+    <circle cx="430" cy="64" r="1.5" opacity="0.65"/><circle cx="520" cy="120" r="1.2" opacity="0.5"/>
+    <circle cx="560" cy="56" r="1.7" opacity="0.7"/><circle cx="720" cy="70" r="1.3" opacity="0.6"/>
+    <circle cx="760" cy="130" r="1.5" opacity="0.55"/><circle cx="120" cy="180" r="1.1" opacity="0.4"/>
+  </g>
+
+  <!-- warme horizongloed -->
+  <ellipse cx="400" cy="500" rx="520" ry="180" fill="url(#horizon)"/>
+
+  <!-- verre boomlijn -->
+  <path d="M0,360 q60,-26 120,-8 q40,-30 90,-10 q70,-34 140,-6 q60,-26 130,-12 q80,-30 160,-6 q70,-22 160,-10 L800,520 L0,520 Z" fill="#0a1a14" opacity="0.85"/>
+
+  <!-- pijnbomen links -->
+  <g fill="#081511">
+    <path d="M70,372 l16,-54 l16,54 z"/><path d="M74,348 l12,-40 l12,40 z"/>
+    <rect x="84" y="372" width="4" height="14"/>
+    <path d="M118,378 l13,-44 l13,44 z"/><rect x="129" y="378" width="3" height="12"/>
+  </g>
+
+  <!-- lichtslinger -->
+  <path d="M30,150 Q400,46 770,158" fill="none" stroke="#34564a" stroke-width="2"/>
+  <g>
+    <g><circle cx="70" cy="146" r="11" fill="url(#bulb)"/><circle cx="70" cy="146" r="3.4" fill="#ffd98a"/></g>
+    <g><circle cx="150" cy="118" r="11" fill="url(#bulb)"/><circle cx="150" cy="118" r="3.4" fill="#ffd98a"/></g>
+    <g><circle cx="235" cy="96" r="11" fill="url(#bulb)"/><circle cx="235" cy="96" r="3.4" fill="#ffd98a"/></g>
+    <g><circle cx="320" cy="80" r="11" fill="url(#bulb)"/><circle cx="320" cy="80" r="3.4" fill="#ffd98a"/></g>
+    <g><circle cx="410" cy="72" r="11" fill="url(#bulb)"/><circle cx="410" cy="72" r="3.4" fill="#ffd98a"/></g>
+    <g><circle cx="500" cy="76" r="11" fill="url(#bulb)"/><circle cx="500" cy="76" r="3.4" fill="#ffd98a"/></g>
+    <g><circle cx="585" cy="90" r="11" fill="url(#bulb)"/><circle cx="585" cy="90" r="3.4" fill="#ffd98a"/></g>
+    <g><circle cx="665" cy="112" r="11" fill="url(#bulb)"/><circle cx="665" cy="112" r="3.4" fill="#ffd98a"/></g>
+    <g><circle cx="740" cy="142" r="11" fill="url(#bulb)"/><circle cx="740" cy="142" r="3.4" fill="#ffd98a"/></g>
+  </g>
+
+  <!-- tent -->
+  <ellipse cx="400" cy="348" rx="170" ry="86" fill="url(#tentglow)" opacity="0.55"/>
+  <!-- interieurgloed achter de tent -->
+  <g>
+    <!-- valance / dak -->
+    <path d="M400,150 L250,300 Q400,332 550,300 Z" fill="#0c211b" stroke="#3a5e51" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- middenpaal-naad -->
+    <path d="M400,152 L400,360" stroke="#28473d" stroke-width="2"/>
+    <!-- wanden -->
+    <path d="M250,300 L250,362 L550,362 L550,300" fill="#0a1d18" stroke="#34564a" stroke-width="2"/>
+    <!-- gescalopeerde rand -->
+    <path d="M250,300 q21,20 42,0 q21,20 42,0 q21,20 42,0 q21,20 42,0 q21,20 42,0 q21,20 42,0 q21,20 42,0"
+          fill="#0c241d" stroke="#3a5e51" stroke-width="1.5"/>
+    <!-- finial + vlaggetje -->
+    <path d="M400,150 L400,132" stroke="#3a5e51" stroke-width="2"/>
+    <path d="M400,134 l16,5 l-16,6 z" fill="#e0764a"/>
+    <!-- gloeiende ingang -->
+    <path d="M372,362 L372,318 Q400,300 428,318 L428,362 Z" fill="url(#door)"/>
+    <path d="M388,362 L388,330 Q400,322 412,330 L412,362 Z" fill="#fff1cf" opacity="0.7"/>
+  </g>
+
+  <!-- kleine bijtent rechts voor diepte -->
+  <g opacity="0.92">
+    <ellipse cx="628" cy="356" rx="78" ry="40" fill="url(#tentglow)" opacity="0.4"/>
+    <path d="M628,250 L566,338 Q628,356 690,338 Z" fill="#0b1f19" stroke="#33554a" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M566,338 L566,366 L690,366 L690,338" fill="#091b16" stroke="#2c4c41" stroke-width="1.6"/>
+    <path d="M604,366 L604,344 Q628,332 652,344 L652,366 Z" fill="url(#door)" opacity="0.85"/>
+  </g>
+
+  <!-- grondschaduw -->
+  <ellipse cx="400" cy="372" rx="240" ry="20" fill="#06120e" opacity="0.6"/>
+</svg>

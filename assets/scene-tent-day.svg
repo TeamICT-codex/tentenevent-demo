@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ec6dd"/>
+      <stop offset="0.55" stop-color="#bfe0e2"/>
+      <stop offset="1" stop-color="#eaf2df"/>
+    </linearGradient>
+    <radialGradient id="dsun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6da"/>
+      <stop offset="0.55" stop-color="#fff0c5" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff0c5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dlawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c7e0a4"/>
+      <stop offset="1" stop-color="#9cc47e"/>
+    </linearGradient>
+    <radialGradient id="ddoor" cx="0.5" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#fcedc6"/>
+      <stop offset="1" stop-color="#eccf93"/>
+    </radialGradient>
+  </defs>
+
+  <!-- lucht + zon -->
+  <rect width="800" height="520" fill="url(#dsky)"/>
+  <circle cx="660" cy="110" r="150" fill="url(#dsun)"/>
+  <!-- wolken -->
+  <g fill="#ffffff" opacity="0.85">
+    <ellipse cx="150" cy="110" rx="60" ry="20"/><ellipse cx="200" cy="100" rx="42" ry="17"/>
+    <ellipse cx="520" cy="150" rx="48" ry="16"/><ellipse cx="560" cy="142" rx="34" ry="13"/>
+  </g>
+
+  <!-- gazon -->
+  <path d="M0,372 Q200,352 400,366 Q600,380 800,360 L800,520 L0,520 Z" fill="url(#dlawn)"/>
+  <path d="M0,392 Q220,378 430,390 Q620,400 800,384 L800,520 L0,520 Z" fill="#8bbb6e" opacity="0.6"/>
+
+  <!-- boom links -->
+  <g><rect x="86" y="300" width="9" height="86" rx="3" fill="#7c5a3a"/>
+    <circle cx="90" cy="286" r="40" fill="#7aa46e"/><circle cx="64" cy="300" r="28" fill="#6f9e6a"/>
+    <circle cx="116" cy="300" r="30" fill="#85ad77"/><circle cx="92" cy="316" r="30" fill="#74a16c"/></g>
+
+  <!-- slingervlaggetjes -->
+  <path d="M40,118 Q400,58 760,126" fill="none" stroke="#b7a584" stroke-width="2"/>
+  <g>
+    <path d="M58,116 l24,3 l-13,21 z" fill="#d2622f"/>
+    <path d="M104,110 l24,2 l-12,22 z" fill="#e7a64d"/>
+    <path d="M150,105 l24,2 l-12,22 z" fill="#7aa46e"/>
+    <path d="M196,101 l24,1 l-12,22 z" fill="#e0e6d8"/>
+    <path d="M242,97 l24,1 l-12,22 z" fill="#d2622f"/>
+    <path d="M288,94 l24,1 l-12,22 z" fill="#e7a64d"/>
+    <path d="M334,92 l24,0 l-12,22 z" fill="#7aa46e"/>
+    <path d="M380,91 l24,0 l-12,22 z" fill="#e0e6d8"/>
+    <path d="M426,91 l24,0 l-12,22 z" fill="#d2622f"/>
+    <path d="M472,92 l24,1 l-12,22 z" fill="#e7a64d"/>
+    <path d="M518,94 l24,1 l-12,22 z" fill="#7aa46e"/>
+    <path d="M564,98 l24,1 l-12,22 z" fill="#e0e6d8"/>
+    <path d="M610,103 l24,2 l-12,22 z" fill="#d2622f"/>
+    <path d="M656,110 l24,2 l-13,22 z" fill="#e7a64d"/>
+    <path d="M702,118 l24,3 l-13,21 z" fill="#7aa46e"/>
+  </g>
+
+  <!-- partytent -->
+  <ellipse cx="400" cy="384" rx="230" ry="20" fill="#5f8a52" opacity="0.35"/>
+  <g>
+    <!-- dak -->
+    <path d="M400,150 L250,300 Q400,330 550,300 Z" fill="#fbf6ec" stroke="#dcc9a6" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- middennaad + schaduwzijde -->
+    <path d="M400,152 L250,300 Q400,330 400,300 Z" fill="#efe4cf" opacity="0.7"/>
+    <!-- wanden -->
+    <path d="M250,300 L250,372 L550,372 L550,300" fill="#fdf9f0" stroke="#dcc9a6" stroke-width="2"/>
+    <path d="M250,300 L250,372 L300,372 L300,300 Z" fill="#f0e6d2" opacity="0.6"/>
+    <!-- gescalopeerde rand -->
+    <path d="M250,300 q21,20 42,0 q21,20 42,0 q21,20 42,0 q21,20 42,0 q21,20 42,0 q21,20 42,0 q21,20 42,0"
+          fill="#f4ead7" stroke="#d8a24a" stroke-width="1.6"/>
+    <!-- finial + vlag -->
+    <path d="M400,150 L400,132" stroke="#dcc9a6" stroke-width="2"/>
+    <path d="M400,133 l18,6 l-18,6 z" fill="#d2622f"/>
+    <!-- open ingang met warme gloed -->
+    <path d="M372,372 L372,318 Q400,300 428,318 L428,372 Z" fill="url(#ddoor)"/>
+    <path d="M388,372 L388,332 Q400,324 412,332 L412,372 Z" fill="#b9874a" opacity="0.5"/>
+  </g>
+
+  <!-- bijtentje rechts -->
+  <g opacity="0.96">
+    <path d="M628,250 L566,338 Q628,356 690,338 Z" fill="#fbf6ec" stroke="#dcc9a6" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M566,338 L566,372 L690,372 L690,338" fill="#fdf9f0" stroke="#dcc9a6" stroke-width="1.6"/>
+    <path d="M604,372 L604,346 Q628,334 652,346 L652,372 Z" fill="url(#ddoor)"/>
+  </g>
+
+  <!-- bloemen / stippen op gazon -->
+  <g>
+    <circle cx="170" cy="430" r="4" fill="#e7a64d"/><circle cx="210" cy="455" r="4" fill="#d2622f"/>
+    <circle cx="700" cy="440" r="4" fill="#e7a64d"/><circle cx="740" cy="465" r="4" fill="#d2622f"/>
+    <circle cx="120" cy="470" r="4" fill="#fff" opacity="0.8"/><circle cx="660" cy="475" r="4" fill="#fff" opacity="0.8"/>
+  </g>
+</svg>
