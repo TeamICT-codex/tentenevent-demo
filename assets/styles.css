@@ -262,6 +262,8 @@ strong{font-weight:700;color:var(--head)}
 .photo{position:relative;isolation:isolate;overflow:hidden;min-height:220px;display:flex;align-items:flex-end;justify-content:flex-start;
   background:var(--photo-base);border:1px solid var(--line)}
 .photo::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--scene) center/cover no-repeat}
+/* echte foto bovenop de illustratie-fallback */
+.photo > img.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .photo::after{content:"";position:absolute;inset:0;z-index:-1;
   background:radial-gradient(80% 55% at 50% 112%,rgba(210,98,47,.22),transparent 60%);mix-blend-mode:screen}
 .photo-note{margin:.9rem;padding:.45rem .75rem;border-radius:var(--r-pill);background:var(--photo-note-bg);backdrop-filter:blur(4px);
