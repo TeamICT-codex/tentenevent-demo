@@ -176,6 +176,20 @@ strong{font-weight:700;color:var(--head)}
 .skip-link{position:absolute;left:-9999px;top:0;z-index:300;background:var(--accent);color:#fff;
   padding:.7rem 1.2rem;border-radius:0 0 var(--r-sm) 0;font-weight:700}
 .skip-link:focus{left:0}
+
+/* Emoji-iconen (vervangen de thematische svg's) */
+.em{font-style:normal;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ic .em{font-size:1.35rem}
+.chip .em,.usp .em{font-size:1.02rem}
+.feat .em{font-size:.92rem;margin-top:.12em}
+.notice > .em{font-size:1.25rem;margin-top:.05em}
+.region .em,.topbar .em,.foot-contact .em,.nph .em{font-size:1rem}
+.foot-contact .em{margin-top:.15em}
+.photo-note .em{font-size:.92rem}
+.mobilebar .em{font-size:1.25rem}
+.theme-toggle .em{font-size:1.12rem}
+.crumbs .em{font-size:.8rem}
+.info-list .ic .em{font-size:1.25rem}
 .site-header{position:sticky;top:0;z-index:100;background:var(--header-bg);
   backdrop-filter:saturate(150%) blur(14px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:74px}
